@@ -721,26 +721,20 @@
     display:flex;
     align-items:center;
     justify-content:space-between;
-
-    padding:0 60px;
-
+    padding:0 96px;
     min-height:420px;
 }
-
 .cardio-content{
     width:45%;
 }
-
 .cardio-breadcrumb{
     font-size:15px !important;
     color:#666;
     margin-bottom:20px !important;
 }
-
 .cardio-breadcrumb span{
     color:#0D5BD7;
 }
-
 .cardio-title{
     font-size:62px !important;
     font-weight:800 !important;
@@ -777,7 +771,7 @@
 
 .cardio-image img{
     width:100%;
-    max-width:700px;
+    max-width:600px;
     display:block;
     object-fit:contain;
 }
@@ -804,9 +798,7 @@ justify-content:center;
 .cardio-image img{
 max-width:500px;
 }
-
 }
-
 /* Mobile */
 
 @media(max-width:600px){
@@ -818,18 +810,1803 @@ padding:30px 20px;
 .cardio-title{
 font-size:40px !important;
 }
-
 .cardio-description{
 font-size:16px !important;
 line-height:28px !important;
 }
-
 .cardio-btn{
 width:100%;
 }
-
 .cardio-image img{
 max-width:100%;
 }
+}
+/* ====================================== second section ==================================== */
+.cardio-about-section{
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:60px;
+    padding:70px 95px;
+}
+
+.cardio-about-image{
+    width:50%;
+}
+
+.cardio-about-image img{
+    width:100%;
+    display:block;
+    border-radius:20px;
+    object-fit:cover;
+}
+
+.cardio-about-content{
+    width:50%;
+}
+
+.cardio-about-subtitle{
+    font-size:16px !important;
+    font-weight:700 !important;
+    color:#0D5BD7;
+    letter-spacing:1px;
+    margin-bottom:10px !important;
+}
+
+.cardio-about-line{
+    width:70px;
+    height:4px;
+    background:#0D5BD7;
+    border-radius:30px;
+    margin-bottom:30px;
+}
+
+.cardio-about-title{
+    font-size:52px !important;
+    font-weight:800 !important;
+    color:#061B49;
+    line-height:1.2 !important;
+    margin-bottom:25px !important;
+}
+
+.cardio-about-description{
+    font-size:18px !important;
+    color:#666;
+    line-height:34px !important;
+    margin-bottom:40px !important;
+}
+
+.cardio-about-btn{
+    background:#0D5BD7 !important;
+    color:#fff !important;
+    text-transform:none !important;
+    font-size:17px !important;
+    font-weight:700 !important;
+    border-radius:50px !important;
+    padding:15px 34px !important;
+    transition:.3s;
+}
+
+.cardio-about-btn:hover{
+    background:#2F5896 !important;
+}
+
+/* Tablet */
+
+@media(max-width:991px){
+
+.cardio-about-section{
+flex-direction:column;
+padding:70px 30px;
+gap:50px;
+}
+
+.cardio-about-image{
+width:100%;
+}
+
+.cardio-about-content{
+width:100%;
+text-align:center;
+}
+
+.cardio-about-line{
+margin:auto;
+margin-bottom:25px;
+}
+
+.cardio-about-title{
+font-size:42px !important;
+}
 
 }
+
+/* Mobile */
+
+@media(max-width:600px){
+
+.cardio-about-section{
+padding:50px 20px;
+}
+
+/* image upper */
+
+.cardio-about-image{
+order:1;
+}
+
+/* content nichy */
+
+.cardio-about-content{
+order:2;
+}
+
+.cardio-about-title{
+font-size:34px !important;
+}
+
+.cardio-about-description{
+font-size:16px !important;
+line-height:28px !important;
+}
+
+.cardio-about-btn{
+width:100%;
+}
+
+}
+/* ================= Third Section ================= */
+
+.cardio-services-section {
+  width: 100%;
+  background: #ffffff;
+  padding:50px ;
+}
+
+.cardio-services-container {
+  width: 100%;
+  max-width: 1800px;
+  margin: 0 auto;
+ padding:20px 45px 20px;
+}
+
+.cardio-section-header {
+  margin-bottom: 28px;
+}
+
+.cardio-section-title {
+  font-size: 30px !important;
+  font-weight: 800 !important;
+  color: #06285f !important;
+  line-height: 1.2 !important;
+}
+
+.cardio-title-line {
+  width: 42px;
+  height: 4px;
+  background: #0d5bd7;
+  border-radius: 20px;
+  margin-top: 12px;
+}
+
+.cardio-services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 26px;
+  width:100% ;
+}
+
+.cardio-service-card {
+   display: flex;
+  align-items: flex-start;   /* center ki jagah ye karo */
+  gap: 20px;
+  border: 1px solid #e5edf8;
+  border-radius: 16px;
+  background: #fff; 
+   padding: 30px;
+ 
+ 
+}
+
+.cardio-service-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 35px rgba(13, 91, 215, 0.12);
+  border-color: #cfe0ff;
+}
+
+.cardio-service-icon {
+ width: 58px;
+  height: 58px;
+  min-width: 58px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #eef4ff;
+  border-radius: 14px;
+  color: #0D5BD7;
+ margin-top: -2px;
+  align-self:flex-start;
+}
+
+.cardio-service-icon svg {
+  font-size: 36px;
+}
+.cardio-service-title {
+  font-size: 16px !important;
+  font-weight: 800 !important;
+  color: #06285f !important;
+  margin-bottom: 8px !important;
+}
+.cardio-service-text {
+  font-size: 14px !important;
+  font-weight: 400 !important;
+  color: #4d5b73 !important;
+  line-height: 1.8 !important;
+}
+/* Tablet */
+@media (max-width: 991px) {
+  .cardio-services-container {
+    width: 90%;
+  }
+
+  .cardio-services-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+  }
+
+  .cardio-section-title {
+    font-size: 27px !important;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .cardio-services-section {
+    padding: 35px 0 45px;
+  }
+
+  .cardio-services-container {
+    width: 92%;
+  }
+
+  .cardio-services-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .cardio-service-card {
+    padding: 24px 20px;
+    align-items: flex-start;
+  }
+
+  .cardio-section-title {
+    font-size: 24px !important;
+  }
+
+  .cardio-service-icon {
+    width: 54px;
+    height: 54px;
+    min-width: 54px;
+  }
+
+  .cardio-service-icon svg {
+    font-size: 30px;
+  }
+}
+/* ==================================== fourth section ==================================== */
+
+
+.cardio-why-section {
+  width: 100%;
+  /* padding: 35px 0 55px; */
+  background: #ffffff;
+  padding: 50px;
+}
+
+.cardio-why-container {
+  width: 100%;
+  max-width: 1800px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.1fr 1fr 1fr;
+  gap: 34px;
+  align-items: center;
+ padding:0 48px ;
+}
+
+.cardio-why-title {
+  font-size: 30px !important;
+  font-weight: 800 !important;
+  color: #06285f !important;
+  line-height: 1.2 !important;
+}
+
+.cardio-why-line {
+  width: 42px;
+  height: 4px;
+  background: #0d5bd7;
+  border-radius: 20px;
+  margin: 12px 0 26px;
+}
+
+.cardio-why-point {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 17px;
+}
+
+.cardio-why-point svg {
+  font-size: 20px;
+  color: #0d5bd7;
+  margin-top: 2px;
+}
+
+.cardio-why-point p {
+  font-size: 15px !important;
+  line-height: 1.6 !important;
+  color: #4d5b73 !important;
+  font-weight: 500 !important;
+}
+
+.cardio-why-image img {
+  width: 100%;
+  height: 340px;
+  object-fit: cover;
+  border-radius: 16px;
+  display: block;
+}
+
+.cardio-why-cta {
+  background: #eaf4ff;
+  border-radius: 16px;
+  padding: 34px 34px;
+  min-height: 260px;
+}
+
+.cardio-why-cta-icon {
+  width: 54px;
+  height: 54px;
+  background: #dceaff;
+  color: #0d5bd7;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 18px;
+}
+
+.cardio-why-cta-icon svg {
+  font-size: 32px;
+}
+
+.cardio-why-cta-title {
+  font-size: 22px !important;
+  font-weight: 800 !important;
+  color: #06285f !important;
+  margin-bottom: 18px !important;
+}
+
+.cardio-why-cta-text {
+  font-size: 16px !important;
+  line-height: 1.8 !important;
+  color: #4d5b73 !important;
+  margin-bottom: 24px !important;
+}
+
+.cardio-why-btn {
+  background: #0d5bd7 !important;
+  color: #ffffff !important;
+  border-radius: 40px !important;
+  padding: 12px 28px !important;
+  font-size: 14px !important;
+  font-weight: 700 !important;
+  text-transform: none !important;
+}
+
+.cardio-why-btn:hover {
+  background: #2F5896 !important;
+}
+
+/* Tablet */
+@media (max-width: 991px) {
+  .cardio-why-container {
+    width: 90%;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .cardio-why-left {
+    grid-column: 1 / -1;
+  }
+
+  .cardio-why-image img {
+    height: 250px;
+  }
+
+  .cardio-why-cta {
+    min-height: 250px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .cardio-why-section {
+    padding: 30px 0 45px;
+  }
+
+  .cardio-why-container {
+    width: 92%;
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .cardio-why-title {
+    font-size: 25px !important;
+  }
+
+  .cardio-why-image img {
+    height: auto;
+  }
+
+  .cardio-why-cta {
+    padding: 28px 24px;
+  }
+
+  .cardio-why-cta-title {
+    font-size: 20px !important;
+  }
+
+  .cardio-why-cta-text {
+    font-size: 15px !important;
+  }
+}
+/* =================================== contact section ================================= */
+
+
+.cardio-help-section {
+  width: 100%;
+   padding: 35px 95px 70px; 
+  background: #ffffff;
+ 
+}
+
+.cardio-help-container {
+  width: 100%;
+  max-width: 1800px;
+  margin: 0 auto;
+  background: linear-gradient(135deg, #0d5bd7 0%, #1746b5 100%);
+  border-radius: 16px;
+   padding: 44px 60px; 
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.cardio-help-left {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.cardio-help-icon {
+  width: 92px;
+  height: 92px;
+  min-width: 92px;
+  background: #ffffff;
+  color: #0d5bd7;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cardio-help-icon svg {
+  font-size: 48px;
+}
+
+.cardio-help-title {
+  font-size: 30px !important;
+  font-weight: 800 !important;
+  color: #ffffff !important;
+  margin-bottom: 10px !important;
+}
+
+.cardio-help-text {
+  font-size: 16px !important;
+  line-height: 1.8 !important;
+  color: #ffffff !important;
+  font-weight: 400 !important;
+}
+
+.cardio-help-right {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  min-width: 360px;
+}
+
+.cardio-help-info {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.cardio-help-info svg {
+  color: #ffffff;
+  font-size: 26px;
+}
+
+.cardio-help-info p {
+  color: #ffffff !important;
+  font-size: 16px !important;
+  font-weight: 500 !important;
+}
+
+/* Tablet */
+@media (max-width: 991px) {
+  .cardio-help-container {
+    width: 90%;
+    padding: 40px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .cardio-help-right {
+    min-width: 100%;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .cardio-help-section {
+    padding: 30px 0 55px;
+  }
+
+  .cardio-help-container {
+    width: 92%;
+    padding: 32px 24px;
+    border-radius: 14px;
+    gap: 28px;
+  }
+
+  .cardio-help-left {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .cardio-help-icon {
+    width: 78px;
+    height: 78px;
+    min-width: 78px;
+  }
+
+  .cardio-help-icon svg {
+    font-size: 40px;
+  }
+
+  .cardio-help-title {
+    font-size: 25px !important;
+  }
+
+  .cardio-help-text,
+  .cardio-help-info p {
+    font-size: 14px !important;
+  }
+
+  .cardio-help-info {
+    align-items: flex-start;
+  }
+}
+
+/* ===================================== pulmonology page ================================= */
+/* ================= Banner Section ================= */
+.pulmo-banner {
+  width: 100%;
+  background: linear-gradient(
+120deg,
+#FFFFFF 0%,
+#EEF8FF 20%,
+#D5EAFF 55%,
+#a7d4ff7c 80%,
+#6fb7ff4f 100%
+);}
+
+.pulmo-about-section{
+  width:100% ;
+}
+
+.pulmo-banner-container {
+  width: 100%;
+  max-width: 1800px;
+  margin: 0 auto;
+  min-height: 380px;
+  display: grid;
+  grid-template-columns: 1fr 1.25fr;
+  align-items: center;
+  gap: 40px;
+  padding: 30px 95px ;
+
+.pulmo-breadcrumb {
+  font-size: 14px !important;
+  color: #3d4a5c !important;
+  margin-bottom: 28px !important;
+}
+
+.pulmo-breadcrumb span {
+  color: #0d5bd7;
+}
+
+.pulmo-banner-title {
+  font-size: 54px !important;
+  font-weight: 800 !important;
+  color: #06285f !important;
+  margin-bottom: 22px !important;
+}
+
+.pulmo-banner-text {
+  max-width: 560px;
+  font-size: 17px !important;
+  line-height: 1.8 !important;
+  color: #344052 !important;
+  margin-bottom: 28px !important;
+}
+
+.pulmo-banner-image img {
+  width: 100%;
+  height: 380px;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  transform: translateY(60px);
+}
+
+/* ================= Common Button ================= */
+
+.pulmo-btn {
+  background: #0d5bd7 !important;
+  color: #ffffff !important;
+  border-radius: 40px !important;
+  padding: 12px 30px !important;
+  font-size: 14px !important;
+  font-weight: 700 !important;
+  text-transform: none !important;
+}
+
+.pulmo-btn:hover {
+  background: #2f5896 !important;
+}
+
+/* ================= About Pulmonology Section ================= */
+
+.pulmo-about-section {
+  width: 100%;
+  /* padding: 70px 0 35px; */
+  background: #ffffff;
+}
+
+.pulmo-about-container {
+  width: 100%;
+  max-width: 1800px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  gap: 70px;
+  align-items: center;
+  padding: 0 60px ;
+}
+
+.pulmo-about-image img {
+  width: 100%;
+  height: 310px;
+  object-fit: cover;
+  border-radius: 16px;
+  display: block;
+}
+
+.pulmo-small-title {
+  font-size: 15px !important;
+  color: #0d5bd7 !important;
+  font-weight: 800 !important;
+  margin-bottom: 12px !important;
+}
+
+.pulmo-line {
+  width: 42px;
+  height: 4px;
+  background: #0d5bd7;
+  border-radius: 20px;
+  margin-bottom: 26px;
+}
+
+.pulmo-about-title {
+  font-size: 34px !important;
+  font-weight: 800 !important;
+  color: #06285f !important;
+  margin-bottom: 22px !important;
+  line-height: 1.25 !important;
+}
+
+.pulmo-about-text {
+  font-size: 16px !important;
+  line-height: 1.85 !important;
+  color: #4d5b73 !important;
+  margin-bottom: 26px !important;
+}
+
+/* ================= Pulmonology Services Section ================= */
+
+.pulmo-services-section {
+  width: 100%;
+  padding: 35px 0 55px;
+  background: #ffffff;
+}
+
+.pulmo-container {
+  padding: 30px 95px ;
+  width: 100%;
+  max-width: 1800px;
+  margin: 0 auto;
+}
+
+.pulmo-section-title {
+  font-size: 30px !important;
+  font-weight: 800 !important;
+  color: #06285f !important;
+  line-height: 1.2 !important;
+}
+
+.pulmo-services-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 26px;
+}
+
+.pulmo-service-card {
+  min-height: 145px;
+  padding: 26px 22px;
+  border: 1px solid #e5edf8;
+  border-radius: 16px;
+  background: #ffffff;
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+  box-shadow: 0 8px 25px rgba(13, 91, 215, 0.05);
+  transition: 0.3s ease;
+}
+
+.pulmo-service-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 35px rgba(13, 91, 215, 0.12);
+}
+
+.pulmo-service-icon {
+  width: 56px;
+  height: 56px;
+  min-width: 56px;
+  border-radius: 16px;
+  background: #eef4ff;
+  color: #0d5bd7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pulmo-service-icon svg {
+  font-size: 32px;
+}
+
+.pulmo-service-title {
+  font-size: 15px !important;
+  font-weight: 800 !important;
+  color: #06285f !important;
+  margin-bottom: 8px !important;
+}
+
+.pulmo-service-text {
+  font-size: 13px !important;
+  color: #4d5b73 !important;
+  line-height: 1.8 !important;
+}
+
+/* ================= Why Choose Us Section ================= */
+
+.pulmo-why-section {
+  width: 100%;
+  padding: 25px 0 55px;
+  background: #ffffff;
+}
+
+.pulmo-why-container {
+  width: 86%;
+  max-width: 1800px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.1fr 1.15fr 1fr;
+  gap: 34px;
+  align-items: center;
+}
+
+.pulmo-why-point {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 17px;
+}
+
+.pulmo-why-point svg {
+  font-size: 20px;
+  color: #0d5bd7;
+  margin-top: 2px;
+}
+
+.pulmo-why-point p {
+  font-size: 15px !important;
+  line-height: 1.6 !important;
+  color: #4d5b73 !important;
+  font-weight: 500 !important;
+}
+
+.pulmo-why-image img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 16px;
+  display: block;
+}
+
+.pulmo-why-card {
+  background: #eaf4ff;
+  border-radius: 16px;
+  padding: 34px;
+  min-height: 250px;
+}
+
+.pulmo-why-card-icon {
+  width: 54px;
+  height: 54px;
+  background: #dceaff;
+  color: #0d5bd7;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 18px;
+}
+
+.pulmo-why-card-icon svg {
+  font-size: 32px;
+}
+
+.pulmo-why-card-title {
+  font-size: 22px !important;
+  font-weight: 800 !important;
+  color: #06285f !important;
+  margin-bottom: 18px !important;
+}
+
+.pulmo-why-card-text {
+  font-size: 16px !important;
+  line-height: 1.8 !important;
+  color: #4d5b73 !important;
+  margin-bottom: 24px !important;
+}
+
+/* ================= Need Help Section ================= */
+
+.pulmo-help-section {
+  width: 100%;
+  padding: 35px 0 70px;
+  background: #ffffff;
+}
+
+.pulmo-help-container {
+  width: 86%;
+  max-width: 1800px;
+  margin: 0 auto;
+  background: linear-gradient(135deg, #0d5bd7 0%, #1746b5 100%);
+  border-radius: 16px;
+  padding: 44px 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.pulmo-help-left {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.pulmo-help-icon {
+  width: 92px;
+  height: 92px;
+  min-width: 92px;
+  background: #ffffff;
+  color: #0d5bd7;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pulmo-help-icon svg {
+  font-size: 48px;
+}
+
+.pulmo-help-title {
+  font-size: 30px !important;
+  font-weight: 800 !important;
+  color: #ffffff !important;
+  margin-bottom: 10px !important;
+}
+
+.pulmo-help-text {
+  font-size: 16px !important;
+  line-height: 1.8 !important;
+  color: #ffffff !important;
+}
+
+.pulmo-help-right {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  min-width: 360px;
+}
+
+.pulmo-help-info {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.pulmo-help-info svg {
+  color: #ffffff;
+  font-size: 26px;
+}
+
+.pulmo-help-info p {
+  color: #ffffff !important;
+  font-size: 16px !important;
+  font-weight: 500 !important;
+}
+
+/* ================= Tablet Responsive ================= */
+
+@media (max-width: 991px) {
+  .pulmo-banner-container,
+  .pulmo-about-container,
+  .pulmo-why-container {
+    width: 90%;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .pulmo-banner-title {
+    font-size: 42px !important;
+  }
+
+  .pulmo-banner-image img {
+    height: 330px;
+  }
+
+  .pulmo-services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .pulmo-why-left {
+    grid-column: 1 / -1;
+  }
+
+  .pulmo-help-container {
+    width: 90%;
+    padding: 40px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .pulmo-help-right {
+    min-width: 100%;
+  }
+}
+
+/* ================= Mobile Responsive ================= */
+
+@media (max-width: 600px) {
+  .pulmo-banner-container,
+  .pulmo-about-container,
+  .pulmo-why-container {
+    width: 92%;
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .pulmo-banner-container {
+    padding: 45px 0 0;
+  }
+
+  .pulmo-banner-title {
+    font-size: 36px !important;
+  }
+
+  .pulmo-banner-text {
+    font-size: 15px !important;
+  }
+
+  .pulmo-banner-image img {
+    height: auto;
+  }
+
+  .pulmo-about-section {
+    padding: 45px 0 25px;
+  }
+
+  .pulmo-about-title,
+  .pulmo-section-title {
+    font-size: 25px !important;
+  }
+
+  .pulmo-about-image img,
+  .pulmo-why-image img {
+    height: auto;
+  }
+
+  .pulmo-services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .pulmo-service-card {
+    padding: 24px 20px;
+  }
+
+  .pulmo-why-card {
+    padding: 28px 24px;
+  }
+
+  .pulmo-help-container {
+    width: 92%;
+    padding: 32px 24px;
+    border-radius: 14px;
+  }
+
+  .pulmo-help-left {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .pulmo-help-icon {
+    width: 78px;
+    height: 78px;
+    min-width: 78px;
+  }
+
+  .pulmo-help-title {
+    font-size: 25px !important;
+  }
+
+  .pulmo-help-text,
+  .pulmo-help-info p {
+    font-size: 14px !important;
+  }
+} 
+}
+
+.pulmo-breadcrumb {
+  font-size: 14px !important;
+  color: #3d4a5c !important;
+  margin-bottom: 28px !important;
+}
+
+.pulmo-breadcrumb span {
+  color: #0d5bd7;
+}
+
+.pulmo-banner-title {
+  font-size: 54px !important;
+  font-weight: 800 !important;
+  color: #06285f !important;
+  margin-bottom: 22px !important;
+}
+
+.pulmo-banner-text {
+  max-width: 560px;
+  font-size: 17px !important;
+  line-height: 1.8 !important;
+  color: #344052 !important;
+  margin-bottom: 28px !important;
+}
+
+.pulmo-banner-image img {
+  width: 100%;
+  height: 380px;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+/* ================= Common Button ================= */
+
+.pulmo-btn {
+  background: #0d5bd7 !important;
+  color: #ffffff !important;
+  border-radius: 40px !important;
+  padding: 12px 30px !important;
+  font-size: 14px !important;
+  font-weight: 700 !important;
+  text-transform: none !important;
+}
+
+.pulmo-btn:hover {
+  background: #2f5896 !important;
+}
+
+/* ================= About Pulmonology Section ================= */
+.pulmo-about-section {
+  width: 100% !important;
+  padding: 70px 0 35px !important;
+  background: #ffffff !important;
+}
+
+.pulmo-about-container {
+  width: 100% !important;
+  max-width: 1800px !important;
+  margin: 0 auto !important;
+  display: grid !important;
+  grid-template-columns: 1fr 1.1fr !important;
+  gap: 70px !important;
+  align-items: center !important;
+  padding: 0 92px !important;
+}
+
+.pulmo-about-image img {
+  width: 100% !important;
+  height: 310px !important;
+  object-fit: cover !important;
+  border-radius: 16px !important;
+  display: block !important;
+}
+
+.pulmo-small-title {
+  font-size: 15px !important;
+  color: #0d5bd7 !important;
+  font-weight: 800 !important;
+  margin-bottom: 12px !important;
+}
+
+.pulmo-line {
+  width: 42px;
+  height: 4px;
+  background: #0d5bd7;
+  border-radius: 20px;
+  margin-bottom: 26px;
+}
+
+.pulmo-about-title {
+  font-size: 34px !important;
+  font-weight: 800 !important;
+  color: #06285f !important;
+  margin-bottom: 22px !important;
+  line-height: 1.25 !important;
+}
+
+.pulmo-about-text {
+  font-size: 16px !important;
+  line-height: 1.85 !important;
+  color: #4d5b73 !important;
+  margin-bottom: 26px !important;
+}
+
+/* ================= Pulmonology Services Section ================= */
+
+.pulmo-services-section {
+  width: 100%;
+  padding: 35px 0 55px;
+  background: #ffffff;
+}
+
+.pulmo-container {
+  width: 100%;
+  max-width: 1800px;
+  margin: 0 auto;
+   padding: 0 92px !important;
+}
+
+.pulmo-section-title {
+  font-size: 30px !important;
+  font-weight: 800 !important;
+  color: #06285f !important;
+  line-height: 1.2 !important;
+}
+
+.pulmo-services-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 26px;
+}
+
+.pulmo-service-card {
+  min-height: 145px;
+  padding: 26px 22px;
+  border: 1px solid #e5edf8;
+  border-radius: 16px;
+  background: #ffffff;
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+  box-shadow: 0 8px 25px rgba(13, 91, 215, 0.05);
+  transition: 0.3s ease;
+}
+
+.pulmo-service-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 35px rgba(13, 91, 215, 0.12);
+}
+
+.pulmo-service-icon {
+  width: 56px;
+  height: 56px;
+  min-width: 56px;
+  border-radius: 16px;
+  background: #eef4ff;
+  color: #0d5bd7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pulmo-service-icon svg {
+  font-size: 32px;
+}
+
+.pulmo-service-title {
+  font-size: 15px !important;
+  font-weight: 800 !important;
+  color: #06285f !important;
+  margin-bottom: 8px !important;
+}
+
+.pulmo-service-text {
+  font-size: 13px !important;
+  color: #4d5b73 !important;
+  line-height: 1.8 !important;
+}
+
+/* ================= Why Choose Us Section ================= */
+
+.pulmo-why-section {
+  width: 100%;
+  padding: 25px 0 55px;
+  background: #ffffff;
+}
+
+.pulmo-why-container {
+  width: 100%;
+  max-width: 1800px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.1fr 1.15fr 1fr;
+  gap: 34px;
+  align-items: center;
+  padding: 0 94px !important;
+}
+
+.pulmo-why-point {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 17px;
+}
+
+.pulmo-why-point svg {
+  font-size: 20px;
+  color: #0d5bd7;
+  margin-top: 2px;
+}
+
+.pulmo-why-point p {
+  font-size: 15px !important;
+  line-height: 1.6 !important;
+  color: #4d5b73 !important;
+  font-weight: 500 !important;
+}
+
+.pulmo-why-image img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 16px;
+  display: block;
+}
+
+.pulmo-why-card {
+  background: #eaf4ff;
+  border-radius: 16px;
+  padding: 34px;
+  min-height: 250px;
+}
+
+.pulmo-why-card-icon {
+  width: 54px;
+  height: 54px;
+  background: #dceaff;
+  color: #0d5bd7;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 18px;
+}
+
+.pulmo-why-card-icon svg {
+  font-size: 32px;
+}
+
+.pulmo-why-card-title {
+  font-size: 22px !important;
+  font-weight: 800 !important;
+  color: #06285f !important;
+  margin-bottom: 18px !important;
+}
+
+.pulmo-why-card-text {
+  font-size: 16px !important;
+  line-height: 1.8 !important;
+  color: #4d5b73 !important;
+  margin-bottom: 24px !important;
+}
+
+/* ================= Need Help Section ================= */
+
+.pulmo-help-section {
+  width: 100%;
+  background: #ffffff;
+  padding: 50px 94px !important;
+}
+
+.pulmo-help-container {
+  width: 100%;
+  max-width: 1800px;
+  margin: 0 auto;
+  background: linear-gradient(135deg, #0d5bd7 0%, #1746b5 100%);
+  border-radius: 16px;
+  padding: 44px 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+   
+}
+
+.pulmo-help-left {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.pulmo-help-icon {
+  width: 92px;
+  height: 92px;
+  min-width: 92px;
+  background: #ffffff;
+  color: #0d5bd7;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pulmo-help-icon svg {
+  font-size: 48px;
+}
+
+.pulmo-help-title {
+  font-size: 30px !important;
+  font-weight: 800 !important;
+  color: #ffffff !important;
+  margin-bottom: 10px !important;
+}
+
+.pulmo-help-text {
+  font-size: 16px !important;
+  line-height: 1.8 !important;
+  color: #ffffff !important;
+}
+
+.pulmo-help-right {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  min-width: 360px;
+}
+
+.pulmo-help-info {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.pulmo-help-info svg {
+  color: #ffffff;
+  font-size: 26px;
+}
+
+.pulmo-help-info p {
+  color: #ffffff !important;
+  font-size: 16px !important;
+  font-weight: 500 !important;
+}
+
+/* ================= Tablet Responsive ================= */
+
+@media (max-width: 991px) {
+  .pulmo-banner-container,
+  .pulmo-about-container,
+  .pulmo-why-container {
+    width: 90%;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .pulmo-banner-title {
+    font-size: 42px !important;
+  }
+
+  .pulmo-banner-image img {
+    height: 330px;
+  }
+
+  .pulmo-services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .pulmo-why-left {
+    grid-column: 1 / -1;
+  }
+
+  .pulmo-help-container {
+    width: 90%;
+    padding: 40px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .pulmo-help-right {
+    min-width: 100%;
+  }
+}
+
+/* ================= Mobile Responsive ================= */
+
+@media (max-width: 600px) {
+  .pulmo-banner-container,
+  .pulmo-about-container,
+  .pulmo-why-container {
+    width: 92%;
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .pulmo-banner-container {
+    padding: 45px 0 0;
+  }
+
+  .pulmo-banner-title {
+    font-size: 36px !important;
+  }
+
+  .pulmo-banner-text {
+    font-size: 15px !important;
+  }
+
+  .pulmo-banner-image img {
+    height: auto;
+  }
+
+  .pulmo-about-section {
+    padding: 45px 0 25px;
+  }
+
+  .pulmo-about-title,
+  .pulmo-section-title {
+    font-size: 25px !important;
+  }
+
+  .pulmo-about-image img,
+  .pulmo-why-image img {
+    height: auto;
+  }
+
+  .pulmo-services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .pulmo-service-card {
+    padding: 24px 20px;
+  }
+
+  .pulmo-why-card {
+    padding: 28px 24px;
+  }
+
+  .pulmo-help-container {
+    width: 92%;
+    padding: 32px 24px;
+    border-radius: 14px;
+  }
+
+  .pulmo-help-left {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .pulmo-help-icon {
+    width: 78px;
+    height: 78px;
+    min-width: 78px;
+  }
+
+  .pulmo-help-title {
+    font-size: 25px !important;
+  }
+
+  .pulmo-help-text,
+  .pulmo-help-info p {
+    font-size: 14px !important;
+  }
+}
+/* ================= Tablet Responsive Fix ================= */
+
+@media (max-width: 991px) {
+  .pulmo-banner-container {
+    padding: 35px 40px !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 30px !important;
+  }
+
+  .pulmo-banner-title {
+    font-size: 42px !important;
+  }
+
+  .pulmo-banner-text {
+    font-size: 15px !important;
+  }
+
+  .pulmo-banner-image img {
+    height: 320px !important;
+    transform: translateY(25px) !important;
+  }
+
+  .pulmo-about-container {
+    padding: 0 40px !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 35px !important;
+  }
+
+  .pulmo-about-title {
+    font-size: 28px !important;
+  }
+
+  .pulmo-about-text {
+    font-size: 15px !important;
+  }
+
+  .pulmo-container {
+    padding: 0 40px !important;
+  }
+
+  .pulmo-services-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 22px !important;
+  }
+
+  .pulmo-why-container {
+    padding: 0 40px !important;
+    grid-template-columns: 1fr 1fr !important;
+  }
+
+  .pulmo-why-left {
+    grid-column: 1 / -1 !important;
+  }
+
+  .pulmo-help-section {
+    padding: 45px 40px !important;
+  }
+
+  .pulmo-help-container {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    padding: 40px !important;
+  }
+
+  .pulmo-help-right {
+    min-width: 100% !important;
+  }
+}
+
+/* ================= Mobile Responsive Fix ================= */
+
+@media (max-width: 600px) {
+  .pulmo-banner-container {
+    padding: 35px 20px 0 !important;
+    grid-template-columns: 1fr !important;
+    gap: 20px !important;
+    min-height: auto !important;
+  }
+
+  .pulmo-breadcrumb {
+    font-size: 13px !important;
+    margin-bottom: 18px !important;
+  }
+
+  .pulmo-banner-title {
+    font-size: 34px !important;
+    margin-bottom: 15px !important;
+  }
+
+  .pulmo-banner-text {
+    font-size: 14px !important;
+    line-height: 1.7 !important;
+  }
+
+  .pulmo-banner-image img {
+    height: auto !important;
+    transform: translateY(0) !important;
+  }
+
+  .pulmo-about-section {
+    padding: 45px 0 20px !important;
+  }
+
+  .pulmo-about-container {
+    padding: 0 20px !important;
+    grid-template-columns: 1fr !important;
+    gap: 28px !important;
+  }
+
+  .pulmo-about-image img {
+    height: auto !important;
+  }
+
+  .pulmo-about-title {
+    font-size: 25px !important;
+  }
+
+  .pulmo-about-text {
+    font-size: 14px !important;
+    line-height: 1.7 !important;
+  }
+
+  .pulmo-container {
+    padding: 0 20px !important;
+  }
+
+  .pulmo-section-title {
+    font-size: 25px !important;
+  }
+
+  .pulmo-services-grid {
+    grid-template-columns: 1fr !important;
+    gap: 18px !important;
+  }
+
+  .pulmo-service-card {
+    padding: 22px 18px !important;
+  }
+
+  .pulmo-why-container {
+    padding: 0 20px !important;
+    grid-template-columns: 1fr !important;
+    gap: 24px !important;
+  }
+
+  .pulmo-why-image img {
+    height: auto !important;
+  }
+
+  .pulmo-why-card {
+    padding: 26px 22px !important;
+  }
+
+  .pulmo-help-section {
+    padding: 40px 20px !important;
+  }
+
+  .pulmo-help-container {
+    padding: 30px 22px !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+  }
+
+  .pulmo-help-left {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 18px !important;
+  }
+
+  .pulmo-help-icon {
+    width: 75px !important;
+    height: 75px !important;
+    min-width: 75px !important;
+  }
+
+  .pulmo-help-title {
+    font-size: 25px !important;
+  }
+
+  .pulmo-help-text,
+  .pulmo-help-info p {
+    font-size: 14px !important;
+  }
+}
+/* ================= iPad / Tablet Fix ================= */
+
+@media (min-width: 768px) and (max-width: 1200px) {
+  .pulmo-banner-container {
+    padding: 35px 45px !important;
+    grid-template-columns: 1fr 1fr !important;
+  }
+
+  .pulmo-about-container {
+    padding: 45px 45px 20px !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 35px !important;
+  }
+
+  .pulmo-container {
+    padding: 0 45px !important;
+  }
+
+  .pulmo-services-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 22px !important;
+  }
+
+  .pulmo-why-container {
+    padding: 0 45px !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 28px !important;
+  }
+
+  .pulmo-why-left {
+    grid-column: 1 / -1 !important;
+  }
+
+  .pulmo-why-image img {
+    height: 260px !important;
+  }
+
+  .pulmo-why-card {
+    min-height: 260px !important;
+  }
+
+  .pulmo-help-section {
+    padding: 45px !important;
+  }
+
+  .pulmo-help-container {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    padding: 40px !important;
+  }
+}
+/* =============================== neurology page ======================================= */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
