@@ -91,33 +91,30 @@ const items = [
 ];
 export default function ServiceBanner() {
   return (
-     <main>
-    <Box className="service-banner">
+    // =============================== banner section ===============================
+      <main>
+     <Box className="service-banner">
       <Box className="service-content">
         <Typography className="service-label">OUR SERVICES</Typography>
 
         <Typography component="h1" className="service-title">
           Comprehensive Healthcare Services For You and Your Family
-        </Typography>
+       </Typography>
 
-        <Typography className="service-text">
-          We offer a wide range of medical services with advanced technology and
+         <Typography className="service-text">
+           We offer a wide range of medical services with advanced technology and
           expert healthcare professionals.
-        </Typography>
+       </Typography>
 
-        <Button className="primary-btn" endIcon={<ArrowForwardIcon />}>
+         <Button className="primary-btn" endIcon={<ArrowForwardIcon />}>
           Book Appointment
         </Button>
       </Box>
 
-      <Box className="service-img-box">
-        <img
-          src="/upload/55.png"
-          alt="Lady Doctor"
-          className="service-img"
-        /> 
-      </Box>
-    </Box>
+       <Box className="service-img-box">
+       <img src="/upload/81.png" alt="Medical Services" className="service-img" />
+     </Box>
+     </Box>
     {/* // ============================= second section ====================================== */}
  <Box className="who-section">
  
@@ -222,8 +219,8 @@ export default function ServiceBanner() {
     </Box>
 
 {/* ==================================== fourth section ===================================== */}
-<Box className="why-mini-section">
-      {/* <Container maxWidth="xl"> */}
+{/* <Box className="why-mini-section">
+      
       <Box className="why-mini-container">
         <Box className="why-mini-box">
           <Box className="why-mini-heading">
@@ -241,9 +238,10 @@ export default function ServiceBanner() {
             </Typography>
           </Box>
 
-          <Grid container className="why-mini-grid">
+         <Box className="why-mini-grid">
             {items.map((item, index) => (
-              <Grid size={{ xs: 12, sm: 6, md: 3 }} key={index}>
+              // <Grid size={{ xs: 12, sm: 6, md: 3 }} key={index}>
+              <Box key={index}>
                 <Box className="why-mini-card">
                   <Box className="why-mini-icon">{item.icon}</Box>
 
@@ -255,9 +253,11 @@ export default function ServiceBanner() {
                     {item.text}
                   </Typography>
                 </Box>
-              </Grid>
+              
+              </Box>
             ))}
-          </Grid>
+         
+          </Box>
 
           <Box className="why-mini-divider" />
 
@@ -274,7 +274,38 @@ export default function ServiceBanner() {
           </Box>
         </Box>
         </Box>
-      {/* </Container> */}
+    </Box> */}
+    <Box className="why-choose-short-section">
+      <Box className="why-choose-short-container">
+
+        <Box className="why-choose-short-img">
+          <img src="/upload/83.png" alt="Why Choose Us" />
+        </Box>
+
+        <Box className="why-choose-short-content">
+          <Typography className="why-choose-short-label">
+            WHY CHOOSE US
+          </Typography>
+
+          <Typography className="why-choose-short-title">
+            Trusted Healthcare <br />
+            With Modern Facilities
+          </Typography>
+
+          <Typography className="why-choose-short-text">
+            We are committed to providing high-quality healthcare with advanced
+            technology, experienced doctors, and a patient-first approach. Your
+            health and well-being are our top priority.
+          </Typography>
+
+          <Link href="/why-choose-us" style={{ textDecoration: "none" }}>
+            <Button className="why-choose-short-btn" endIcon={<ArrowForwardIcon />}>
+              why choose us
+            </Button>
+          </Link>
+        </Box>
+
+      </Box>
     </Box>
 
     {/* ===================================== fifth section =============================== */}

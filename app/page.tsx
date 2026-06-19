@@ -2,59 +2,48 @@
  import { Box, Typography, Button } from "@mui/material";
  import Link from "next/link";
 import "./style/style.css";
+import PlayArrowIcon from "@mui/icons-material/PlayArrow";
 
 export default function Home() {
   return (
     <main>
       {/* =========================== hero section ====================== */}
-      <section className="hero-section">
+       <Box className="home-banner">
+      <Box className="home-banner-container">
+        <Box className="home-banner-content">
+          <Typography className="home-banner-tag">
+            WE CARE ABOUT YOUR HEALTH
+          </Typography>
 
-        <Box className="hero-container">
-          <Box className="hero-content">
-            <span className="tag">WE CARE ABOUT YOUR HEALTH</span>
+          <Typography component="h1" className="home-banner-title">
+            Your Health Is <br />
+            <span>Our Priority</span>
+          </Typography>
 
-            <Typography className="hero-title">
-              Your Health Is <br />
-              <span>Our Priority</span>
-            </Typography>
+          <Typography className="home-banner-text">
+            We provide world class medical services with a focus on patient care
+            and advanced technology.
+          </Typography>
 
-            <Typography className="hero-text">
-              We provide world class medical services with a focus on patient
-              care and advanced technology.
-            </Typography>
+          <Box className="home-banner-buttons">
+            <Button href="/appointment" className="primary-btn">
+              Book Appointment
+            </Button>
 
-            <Box className="hero-buttons">
-              <Button className="primary-btn">Book Appointment</Button>
-               <Link href="/about" style={{ textDecoration: "none" }}>
-                <Button className="primary-btn">About us ▶</Button>
-                </Link>
-            </Box>
-          </Box>
-
-          <Box className="hero-image-box">
-            <img
-              src="/upload/doctor1.png"
-              alt="Doctor"
-              className="doctor-img"
-            />
-
-            {/* <Box className="floating-card card-one">
-              <span>⚕</span>
-              <h3>24/7</h3>
-              <p>Emergency Service</p>
-            </Box>
-
-            <Box className="floating-card card-two">
-              <span>♡</span>
-              <h3>100%</h3>
-              <p>Patient Satisfaction</p>
-            </Box> */}
+            <Button href="/about" className="primary-btn">
+              About Us <span><PlayArrowIcon /></span>
+            </Button>
           </Box>
         </Box>
-      </section>
+
+        <Box className="home-banner-image-box">
+          <img src="/upload/80.png" alt="Doctor" />
+        </Box>
+      </Box>
+    </Box> 
       {/* =========================== second section ==================== */}
 
-     <section className="features-section">
+      <section className="features-section">
       <Box className="features-wrapper">
 
         <Box className="feature-card">
@@ -90,12 +79,12 @@ export default function Home() {
         </Box>
 
       </Box>
-    </section>
+    </section> 
 
     {/* ========================== third section ========================= */}
    
 
-<section className="medical-services-section">
+ <section className="medical-services-section">
   <Box className="services-container">
     
     <Box className="services-heading">
@@ -152,4 +141,4 @@ export default function Home() {
     
     </main>
   );
-}
+} 

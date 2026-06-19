@@ -25,7 +25,7 @@ import "../../style/services-pages.css";
 const CardiologyBanner = () => {
   return (
     <>
-    <Box className="cardio-banner">
+    <Box className="cardio-banner"> 
       <Box className="cardio-banner-wrapper">
 
         {/* Left Side */}

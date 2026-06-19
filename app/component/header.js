@@ -141,27 +141,6 @@ const serviceLinks = [
   </Box>
 </li>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
             <li><Link href="/doctor">Doctors</Link></li>
             {/* <li><Link href="/blog">Blog</Link></li> */}
             <li><Link href="/why-choose-us">Why choose us</Link></li>
